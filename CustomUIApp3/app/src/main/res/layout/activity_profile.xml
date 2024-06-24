@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <!-- Заголовок профиля -->
+    <TextView
+        android:id="@+id/profile_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="User Profile"
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Кастомное текстовое поле для имени -->
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_header"
+        android:layout_margin="16dp"
+        android:hint="Name"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/ic_user"
+        android:padding="12dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Кастомное текстовое поле для email -->
+    <EditText
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_margin="16dp"
+        android:hint="Email"
+        android:background="@drawable/custom_edittext_background"
+        android:drawableStart="@drawable/ic_email"
+        android:padding="12dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Кастомная кнопка для сохранения -->
+    <Button
+        android:id="@+id/save_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:text="Save"
+        android:textColor="@android:color/white" />
+
+    <!-- Кастомная кнопка для перехода в настройки -->
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save_profile_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:text="Settings"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
